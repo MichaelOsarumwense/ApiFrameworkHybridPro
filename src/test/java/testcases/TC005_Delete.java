@@ -36,9 +36,9 @@ public class TC005_Delete extends TestBase {
 
     @Test
     void checkStatusCode(){
-        //logger.info("********** Checking Status Code************");
+        logger.info("********** Checking Status Code************");
         int statusCode = response.statusCode();
-        //logger.info("Status code is ==>"+statusCode);
+        logger.info("Status code is ==>"+statusCode);
         Assert.assertEquals(statusCode, 200);
     }
 }

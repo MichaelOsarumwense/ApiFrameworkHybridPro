@@ -34,20 +34,20 @@ public class TC004_Put extends TestBase {
 
     }
 
-    /*@Test
+    @Test
     void checkResponseBody(){
         String responseBody = response.getBody().asString();
         Assert.assertEquals(responseBody.contains(empAge),true);
         Assert.assertEquals(responseBody.contains(empName),true);
         Assert.assertEquals(responseBody.contains(empSalary),true);
-    }*/
+    }
 
 
     @Test
     void checkStatusCode(){
-        //logger.info("********** Checking Status Code************");
+        logger.info("********** Checking Status Code************");
         int statusCode = response.statusCode();
-        //logger.info("Status code is ==>"+statusCode);
+        logger.info("Status code is ==>"+statusCode);
         Assert.assertEquals(statusCode, 200);
     }
 }
