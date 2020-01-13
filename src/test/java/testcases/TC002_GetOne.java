@@ -20,16 +20,16 @@ public class TC002_GetOne extends TestBase {
 
     @Test
     void checkResponseBody(){
-        //logger.info("********** Checking Response Body************");
+        logger.info("********** Checking Response Body************");
         String responseBody = response.getBody().asString();
-        //logger.info("Response Body==>"+responseBody);
+        logger.info("Response Body==>"+responseBody);
         Assert.assertEquals(responseBody.contains(empID), true);
     }
     @Test
     void checkStatusCode(){
-        //logger.info("********** Checking Status Code************");
+        logger.info("********** Checking Status Code************");
         int statusCode = response.statusCode();
-        //logger.info("Status code is ==>"+statusCode);
+        logger.info("Status code is ==>"+statusCode);
         Assert.assertEquals(statusCode, 200);
     }
 

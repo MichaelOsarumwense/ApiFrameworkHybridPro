@@ -57,7 +57,7 @@ public class TC001_GetAll extends TestBase {
         logger.info("********** Checking content type************");
         String ContentType = response.header("Content-Type");
         logger.info("checkContentType is ==>"+ContentType);
-        Assert.assertEquals(ContentType, "text/html; charset=UTF-8");
+        Assert.assertEquals(ContentType, "application/json;charset=utf-8");
     }
 
     @Test
