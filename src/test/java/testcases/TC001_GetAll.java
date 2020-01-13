@@ -36,13 +36,13 @@ public class TC001_GetAll extends TestBase {
 
     }
 
-    /*@Test
+    @Test
     void checkResponseTime(){
         logger.info("********** Checking Response time************");
         long responseTime = response.getTime();
-        logger.info("Response time is greater than ==>"+responseTime);
-        Assert.assertTrue(responseTime<2000);
-    }*/
+        logger.info("Response time is ==>"+responseTime);
+        Assert.assertTrue(responseTime<=2000);
+    }
 
     @Test
     void checkStatusLine(){
